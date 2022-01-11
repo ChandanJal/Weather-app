@@ -1,13 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Poppins", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  /* colors are definded here */
+  --color-white: #ffffff;
+  --color-faded-white: #f7f7f7;
+  --color-lite-green: #cbe16a;
+  --color-ink-dark: #1a2841;
+  --colot-lite-orange: #f97f29;
+}
+
+:root {
+  /* variables */
+  --progress-bar-height: 8px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  color: var(--color-ink-dark);
+  padding: 0px !important;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+li {
+  list-style: none;
+}
+
+/* ==========================
+      MAIN CONTAINER
+==============================*/
+
+.main-container {
+  width: 100%;
+  height: 100vh;
+}
+
+/* ===========================
+    NAV BAR
+==============================*/
+.nav-bar {
+  width: 100px;
+  height: 100vh;
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-bar ul {
+  margin-top: 5em;
+}
+
+.nav-bar ul li {
+  margin: 20px;
+}
+
+.nav-link.active + li {
+  background-color: var(--colot-lite-orange);
+  padding: 1em;
+}
+
+/* ========================
+      WEATHER CARD
+============================*/
+.weather-card {
+  width: 400px;
+  margin: 20px;
+  position: relative;
+  border-radius: 22px;
+  padding: 1.5em;
+  box-sizing: border-box;
+}
+
+.weather-card img {
+  position: relative;
+  width: 400px;
+  border-radius: 22px;
+  z-index: -1;
+}
+
+.weather-card .weather-card-header {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+.weather-card .weather-card-header .weather-header-icon {
+  background-color: #ffffff;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0.8em;
+}
+
+.weather-header-container {
+  margin-left: 1em;
+}
+
+.weather-header-container h3 {
+  font-weight: bold;
+}
+
+.weather-container {
+  margin-top: 0.8em;
+}
+
+.weather-number {
+  display: flex;
+  align-items: center;
+}
+
+.weather-number .air-quality-heading {
+  color: var(--color-faded-white);
+}
+
+.air-quality-label {
+  color: var(--color-faded-white);
+}
+
+.weather-number .weather-tag {
+  background-color: var(--color-faded-white);
+  padding: 4px 8px;
+  border-radius: 12px;
+  margin-left: 1em;
+}
+
+.weather-number .weather-tag p {
+  font-weight: 600;
+}
+
+.weather-tag-air {
+  background-color: var(--color-lite-green) !important;
+}
+
+.weather-tag-air p {
+  color: var(--color-faded-white);
+}
+
+.weather-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 10px;
+  margin-top: 2.6em;
+}
+
+.weather-footer-card {
+  background-color: var(--color-ink-dark);
+  padding: 10px 10px;
+  display: grid;
+  place-items: center;
+  border-radius: 17px;
+}
+
+.weather-footer-card:nth-child(1) p,
+.weather-footer-card:nth-child(1) h3 {
+  color: var(--color-faded-white);
+}
+
+.weather-footer-card:nth-child(2) {
+  background-color: var(--color-lite-green);
+}
+
+.weather-footer-card:nth-child(3) {
+  background-color: var(--color-faded-white);
+}
+
+.weather-footer-card p {
+  font-size: 0.8rem;
+}
+
+.weather-footer-card h3 {
+  font-size: 1rem;
+}
+
+.air-quality-footer {
+  background-color: var(--color-faded-white);
+  border-radius: 17px;
+  box-sizing: border-box;
+  margin-top: 2em;
+  padding: 1em;
+}
+
+.air-quality-footer-labels {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.air-quality-footer-labels p {
+  font-size: 0.8rem;
+}
+
+.air-quality-footer progress {
+  width: 100%;
+  height: 15px;
+  margin-top: 0.5em;
+  appearance: none;
+  border-radius: var(--progress-bar-height);
+  height: var(--progress-bar-height);
+}
+
+progress::-webkit-progress-bar {
+  background-color: #e4cfc1;
+  border-radius: var(--progress-bar-height);
+}
+
+progress::-webkit-progress-value {
+  background-color: var(--colot-lite-orange);
+  border-radius: var(--progress-bar-height);
 }

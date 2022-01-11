@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <g id="info-svgrepo-com" transform="translate(0 -0.008)">
+    <g id="Group_18" data-name="Group 18" transform="translate(0 0.008)">
+      <g id="Group_17" data-name="Group 17">
+        <path id="Path_10" data-name="Path 10" d="M10,.008a10,10,0,1,0,10,10A10.011,10.011,0,0,0,10,.008ZM10,18.19a8.182,8.182,0,1,1,8.182-8.182A8.191,8.191,0,0,1,10,18.19Z" transform="translate(0 -0.008)" fill="#707070"/>
+        <path id="Path_11" data-name="Path 11" d="M150.924,130.008a.924.924,0,0,0-.924.924v6.159a.924.924,0,1,0,1.848,0v-6.159A.924.924,0,0,0,150.924,130.008Z" transform="translate(-140.924 -122.212)" fill="#707070"/>
+        <path id="Path_12" data-name="Path 12" d="M150.924,70.011a.923.923,0,1,0,.653.27A.932.932,0,0,0,150.924,70.011Z" transform="translate(-140.924 -65.775)" fill="#707070"/>
+      </g>
+    </g>
+  </g>
+</svg>
