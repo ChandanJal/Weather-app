@@ -1,0 +1,115 @@
+/**===============================
+    WEATHER PREDICTION CARD
+===================================**/
+
+.weather-prediction-card {
+  background-color: var(--color-white);
+  border-radius: 20px;
+  padding: 1em;
+  display: grid;
+  align-items: center;
+  min-width: 200px;
+  max-width: 300px;
+  grid-template-columns: auto 1fr;
+
+  .weather-prediction-icon {
+    display: grid;
+    align-items: center;
+  }
+
+  .weather-report {
+    margin-left: 1em;
+
+    p {
+      font-size: 0.9em;
+    }
+
+    div {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+      p {
+        font-size: 0.9em;
+        font-weight: bold;
+        color: var(--color-lite-orange);
+        text-align: right;
+      }
+    }
+  }
+}
+
+/**============================
+          SIDE BAR 
+===============================**/
+.side-bar {
+  width: 25vw;
+  box-sizing: border-box;
+  position: relative;
+  background-color: var(--color-faded-white);
+
+  .side-bar-container {
+    height: 100vh;
+    box-sizing: border-box;
+    padding: 1em;
+  }
+}
+
+/**==============================
+      UVI CARD STYLES
+================================**/
+.uvi-card {
+  display: grid;
+  position: relative;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  padding: 1em;
+  max-width: 300px;
+  background-color: var(--color-ink-dark);
+  border-radius: 20px;
+
+  .uvi-card-icon {
+    display: grid;
+    align-items: center;
+
+    svg {
+      height: 2.6em;
+    }
+  }
+
+  .uvi-card-content {
+    margin-left: 1em;
+
+    .uvi-card-container {
+      display: flex;
+
+      p {
+        margin-left: 1rem;
+        color: var(--color-ink-dark);
+      }
+    }
+
+    p,
+    h4 {
+      color: var(--color-white);
+    }
+
+    p {
+      font-size: 0.9rem;
+    }
+  }
+}
+
+/**==============================
+      Label Styles
+=================================**/
+.label {
+  font-size: 13px !important;
+  border-radius: 15px;
+  display: inline-block;
+  padding: 3px 8px !important;
+  color: var(--color-ink-dark);
+}
+
+.label.green-label {
+  background-color: var(--color-lite-green);
+}

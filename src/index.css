@@ -12,7 +12,7 @@ body {
   --color-faded-white: #f7f7f7;
   --color-lite-green: #cbe16a;
   --color-ink-dark: #1a2841;
-  --colot-lite-orange: #f97f29;
+  --color-lite-orange: #f97f29;
 }
 
 :root {
@@ -74,7 +74,7 @@ li {
 }
 
 .nav-link.active + li {
-  background-color: var(--colot-lite-orange);
+  background-color: var(--color-lite-orange);
   padding: 1em;
 }
 
@@ -112,6 +112,15 @@ li {
   align-items: center;
   box-sizing: border-box;
   padding: 0.8em;
+}
+
+.weather-card .weather-card-header p {
+  font-size: 0.9em;
+}
+
+.weather-card .weather-card-header.light h3,
+.weather-card .weather-card-header.light p {
+  color: var(--color-faded-white);
 }
 
 .weather-header-container {
@@ -227,6 +236,6 @@ progress::-webkit-progress-bar {
 }
 
 progress::-webkit-progress-value {
-  background-color: var(--colot-lite-orange);
+  background-color: var(--color-lite-orange);
   border-radius: var(--progress-bar-height);
 }
