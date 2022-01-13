@@ -1,4 +1,57 @@
 /**===============================
+        NAVIGATION BAR
+==================================**/
+.navbar {
+  background-color: var(--color-white);
+  width: 12vh;
+  height: 100vh;
+  box-sizing: border-box;
+  border-right: 1px solid #ccc;
+  position: relative;
+  padding-top: 5em;
+
+  ul {
+    display: grid;
+    align-items: center;
+    box-sizing: border-box;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+
+    li {
+      padding: 10px;
+      margin: 10px 0;
+
+      .nav-link {
+        transition: all 700ms ease-in-out;
+
+        a {
+          text-align: center;
+          display: grid;
+          place-items: center;
+        }
+
+        svg {
+          height: 1.2em;
+        }
+      }
+    }
+
+    li.active svg {
+      height: 1.4em;
+      fill: #ffffff;
+      stroke: #ffffff !important;
+    }
+
+    li.active .nav-link {
+      padding: 14px;
+      border-radius: 12px;
+      background-color: var(--color-lite-orange);
+    }
+  }
+}
+
+/**===============================
     WEATHER PREDICTION CARD
 ===================================**/
 
@@ -102,14 +155,3 @@
 /**==============================
       Label Styles
 =================================**/
-.label {
-  font-size: 13px !important;
-  border-radius: 15px;
-  display: inline-block;
-  padding: 3px 8px !important;
-  color: var(--color-ink-dark);
-}
-
-.label.green-label {
-  background-color: var(--color-lite-green);
-}
