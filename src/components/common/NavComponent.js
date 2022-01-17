@@ -29,12 +29,8 @@ const homeIcon = (
 );
 
 const sportIcon = (
-  <svg viewBox="0 0 21.5 21.5">
-    <g
-      stroke="#707070"
-      id="ic-sport-basketball"
-      transform="translate(-1.25 -1.25)"
-    >
+  <svg stroke="#707070" viewBox="0 0 21.5 21.5">
+    <g id="ic-sport-basketball" transform="translate(-1.25 -1.25)">
       <circle
         id="Ellipse_15"
         data-name="Ellipse 15"
@@ -145,7 +141,7 @@ const NavComponent = () => {
         <li className="active">
           <NavLink icon={sportIcon} />
         </li>
-        <li className="active">
+        <li className="">
           <NavLink icon={informationIcon} />
         </li>
       </ul>

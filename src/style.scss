@@ -3,11 +3,13 @@
 ==================================**/
 .navbar {
   background-color: var(--color-white);
-  width: 12vh;
+  width: 5.7vw;
   height: 100vh;
   box-sizing: border-box;
   border-right: 1px solid #ccc;
-  position: relative;
+  position: fixed;
+  top: 0px;
+  left: 0px;
   padding-top: 5em;
 
   ul {
@@ -40,7 +42,10 @@
     li.active svg {
       height: 1.4em;
       fill: #ffffff;
-      stroke: #ffffff !important;
+    }
+
+    li.active svg #ic-sport-basketball {
+      stroke: #ffffff;
     }
 
     li.active .nav-link {
@@ -49,6 +54,14 @@
       background-color: var(--color-lite-orange);
     }
   }
+}
+
+/**===============================
+    MAIN CONTAINER
+===================================**/
+
+.main-container {
+  position: relative;
 }
 
 /**===============================
@@ -153,5 +166,17 @@
 }
 
 /**==============================
-      Label Styles
-=================================**/
+      LOCATION SELECTOR
+================================**/
+.locaton-selector {
+  padding: 1em;
+  display: grid;
+  max-width: 360px;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  border: 1px solid red;
+
+  h2 {
+    color: var(--color-lite-orange) !important;
+  }
+}

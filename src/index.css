@@ -279,7 +279,6 @@ li {
 ============================*/
 .weather-card {
   width: 400px;
-  margin: 20px;
   position: relative;
   border-radius: 22px;
   padding: 1.5em;
@@ -308,6 +307,23 @@ li {
   align-items: center;
   box-sizing: border-box;
   padding: 0.8em;
+}
+
+.weather-header-icon svg {
+  transition: all 700ms ease-in;
+}
+
+.weather-header-icon:hover svg path {
+  animation: pathanim 700ms ease;
+}
+
+@keyframes pathanim {
+  0% {
+    stroke-dashoffset: -1000;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
 }
 
 .weather-card .weather-card-header p {
