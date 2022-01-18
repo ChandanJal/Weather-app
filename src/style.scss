@@ -109,7 +109,8 @@
 .side-bar {
   width: 25vw;
   box-sizing: border-box;
-  position: relative;
+  position: absolute;
+  right: 0px;
   background-color: var(--color-faded-white);
 
   .side-bar-container {
@@ -159,9 +160,6 @@
   position: relative;
   grid-template-columns: auto 1fr;
   align-items: center;
-  padding: 1em;
-  background-color: var(--color-ink-dark);
-  border-radius: 20px;
 
   .uvi-card-icon {
     display: grid;
@@ -177,16 +175,6 @@
 
     .uvi-card-container {
       display: flex;
-
-      p {
-        margin-left: 1rem;
-        color: var(--color-ink-dark);
-      }
-    }
-
-    p,
-    h4 {
-      color: var(--color-white);
     }
 
     p {
@@ -207,5 +195,45 @@
 
   h2 {
     color: var(--color-lite-orange) !important;
+  }
+}
+
+/**==============================
+      LOCATION SELECTOR
+================================**/
+.current-location {
+  margin: 1em;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  place-content: center;
+  width: fit-content;
+
+  .current-location-icon {
+    padding: 8px 16px;
+    border-radius: 12px;
+    display: grid;
+    place-items: center;
+    background-color: var(--color-lite-green);
+
+    svg {
+      height: 1.5em;
+    }
+  }
+
+  .location-label {
+    margin-left: 1rem;
+
+    p {
+      font-size: 0.9rem;
+    }
+  }
+}
+
+/**==============================
+      SPORTS CARD
+================================**/
+.sport-card {
+  h3 {
+    color: var(--color-white) !important;
   }
 }

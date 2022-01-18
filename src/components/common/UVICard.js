@@ -2,7 +2,7 @@ import React from "react";
 
 const UVICard = () => {
   return (
-    <div className="uvi-card">
+    <div className="uvi-card background-ink-dark border-radius-22 p-1 w-fit-content">
       <div className="uvi-card-icon">
         <svg viewBox="0 0 30.586 30.586">
           <path
@@ -16,10 +16,10 @@ const UVICard = () => {
 
       <div className="uvi-card-content">
         <div className="uvi-card-container">
-          <h4>20 UVI</h4>
-          <p className="label green-label">Moderate</p>
+          <h4 className="text-white">20 UVI</h4>
+          <p className="label green-label text-ink-dark ml-1">Moderate</p>
         </div>
-        <p>Moderate risk of from UV rays</p>
+        <p className="text-white">Moderate risk of from UV rays</p>
       </div>
     </div>
   );

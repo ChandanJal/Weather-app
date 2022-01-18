@@ -5,11 +5,16 @@ import NavComponent from "../components/common/NavComponent";
 import AirQualityCard from "../components/AirQualityCard";
 import LocationSelector from "../components/common/LocationSelector";
 import SideBar from "../components/SideBar";
+import CurrentLocation from "../components/common/CurrentLocation";
+import SportsCard from "../components/common/SportsCard";
 
 const Home = () => {
   return (
     <div className="container">
+      <SportsCard />
       <SideBar />
+      <WeatherCard />
+      <AirQualityCard />
     </div>
   );
 };
