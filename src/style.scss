@@ -73,9 +73,8 @@
   border-radius: 20px;
   padding: 1em;
   display: grid;
+  margin-top: 1em;
   align-items: center;
-  min-width: 200px;
-  max-width: 300px;
   grid-template-columns: auto 1fr;
 
   .weather-prediction-icon {
@@ -117,6 +116,38 @@
     height: 100vh;
     box-sizing: border-box;
     padding: 1em;
+    position: relative;
+
+    button {
+      position: absolute;
+      bottom: 0px;
+      right: 0px;
+      margin: 1em;
+      background-color: var(--color-lite-orange);
+      border: none;
+      padding: 1em;
+      color: var(--color-white);
+      border-radius: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+
+      * {
+        pointer-events: none;
+      }
+
+      svg {
+        height: 1.3rem;
+      }
+
+      label {
+        margin: 0px;
+        margin-left: 0.5rem;
+        font-family: var(--font-poppins);
+        font-size: 1em;
+      }
+    }
   }
 }
 
@@ -129,7 +160,6 @@
   grid-template-columns: auto 1fr;
   align-items: center;
   padding: 1em;
-  max-width: 300px;
   background-color: var(--color-ink-dark);
   border-radius: 20px;
 
@@ -171,10 +201,9 @@
 .locaton-selector {
   padding: 1em;
   display: grid;
-  max-width: 360px;
+  position: relative;
   grid-template-columns: 1fr auto;
   align-items: center;
-  border: 1px solid red;
 
   h2 {
     color: var(--color-lite-orange) !important;

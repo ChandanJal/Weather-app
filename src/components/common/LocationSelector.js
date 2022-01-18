@@ -8,7 +8,7 @@ const LocationSelector = () => {
         <p>
           Banten, Indonesia
           <span>
-            <i class="fas fa-caret-down ml-1"></i>
+            <i className="fas fa-caret-down ml-1"></i>
           </span>
         </p>
       </div>

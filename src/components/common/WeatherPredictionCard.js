@@ -2,7 +2,7 @@ import React from "react";
 
 const WeatherPredictionCard = () => {
   return (
-    <div className="weather-prediction-card" style={{ margin: "1em" }}>
+    <div className="weather-prediction-card">
       <div className="weather-prediction-icon">
         <svg width="30.586" height="30.586" viewBox="0 0 30.586 30.586">
           <path
