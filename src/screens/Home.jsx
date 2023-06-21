@@ -11,10 +11,18 @@ import SportsCard from "../components/common/SportsCard";
 const Home = () => {
   return (
     <div className="container">
-      <SportsCard />
+      {/* <SportsCard /> */}
       <SideBar />
-      <WeatherCard />
-      <AirQualityCard />
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        <WeatherCard />
+        <AirQualityCard />
+      </div>
     </div>
   );
 };
